@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/fondo"
+        tools:context=".MainActivity">
+    <LinearLayout
+            android:layout_marginLeft="22sp"
+            android:layout_marginTop="52sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Titulo:"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+        />
+
+        <EditText
+                android:textColorHint="#BE000000"
+                android:gravity="center"
+                android:id="@+id/titulo"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12sp"
+                android:background="@drawable/estiloedit"
+                android:inputType="text"
+                android:padding="12sp"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginLeft="22sp"
+            android:layout_marginTop="22sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+                android:layout_marginTop="-30sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Descripcion:"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+        />
+
+        <EditText
+                android:textColorHint="#BE000000"
+                android:gravity="center"
+                android:id="@+id/des"
+                android:layout_width="200sp"
+                android:layout_height="150sp"
+                android:layout_marginLeft="12sp"
+                android:background="@drawable/estiloedit"
+                android:inputType="text"
+                android:padding="12sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_marginLeft="22sp"
+            android:layout_marginTop="22sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Autor:"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+
+        />
+
+        <EditText
+                android:textColorHint="#BE000000"
+                android:gravity="center"
+                android:id="@+id/autor"
+                android:background="@drawable/estiloedit"
+                android:inputType="text"
+                android:layout_marginLeft="12sp"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:padding="12sp"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+        />
+
+
+    </LinearLayout>
+
+
+    <Button
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40sp"
+            android:backgroundTint="#1E7EE3"
+            android:paddingVertical="22sp"
+            app:cornerRadius="42sp"
+            android:paddingLeft="52sp"
+            android:paddingRight="52sp"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="Guardar"
+            android:onClick="guardar"
+    />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_gravity="end"
+            android:layout_marginRight="22sp"
+            android:layout_marginTop="50sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_add_24"
+    />
+
+</LinearLayout>
